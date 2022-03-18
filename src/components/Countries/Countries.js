@@ -11,21 +11,21 @@ const Countries = () => {
     }, [])
 
     return (
-        <div className='countries-container'>
+        <div>
             <h1>Hello From Countries Of The Plannet: {countries.length}</h1>
-            {
-                countries.map(country => <Country
-                    country={country}
-                // name={country.name.common}
-                // population={country.population}
-                // area={country.area}
-                // region={country.region}
-                // flags={country.flags}
 
-
-                ></Country>)
-            }
-
+            <div className='countries-container'>
+                {
+                    countries.map(country => <Country
+                        country={country}
+                    // name={country.name.common}
+                    // population={country.population}
+                    // area={country.area}
+                    // region={country.region}
+                    // flags={country.flags}
+                    ></Country>)
+                }
+            </div>
         </div>
     );
 };
